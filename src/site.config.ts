@@ -10,9 +10,9 @@ export const siteConfig: SiteConfig = {
 		- The link value found in src/components/layout/Header.astro L:35
 		- In the footer found in src/components/layout/Footer.astro L:12
 	*/
-	title: "徐锦宴的博客",
+	title: "小金鱼的博客",
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-	author: "徐锦宴",
+	author: "小金鱼",
 	// Used as the default description meta property and webmanifest description
 	description: "随笔与笔记",
 	// HTML lang property, found in src/layouts/Base.astro L:18 & astro.config.ts L:48
