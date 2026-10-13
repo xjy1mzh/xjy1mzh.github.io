@@ -33,14 +33,15 @@ const latestNotes = allNotes
 	<section>
 		<h1 class="title mb-12">你好，我是徐锦宴</h1>
 		<p class="mb-4">
-			这里是我的随笔与笔记。记录学习、思考和折腾。
+			软件工程大三在读，方向是计算机视觉，正在备战考研。
+			这里记学习和折腾：OpenCV、深度学习的实践笔记，以及一些随想。
 		</p>
 		<SocialList />
 	</section>
 	{
 		pinnedPosts.length > 0 && (
 			<section class="mt-16">
-				<h2 class="title mb-6 text-xl">Pinned Posts</h2>
+				<h2 class="title mb-6 text-xl">置顶</h2>
 				<ul class="space-y-4" role="list">
 					{pinnedPosts.map((p) => (
 						<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
@@ -52,12 +53,12 @@ const latestNotes = allNotes
 		)
 	}
 	<section class="mt-16">
-		<h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
+		<h2 class="title text-accent mb-6 text-xl"><a href="/posts/">最新文章</a></h2>
 		<ul class="space-y-4" role="list">
 			{
 				latestPosts.map((p) => (
 					<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
-						<PostPreview post={p} />
+						<PostPreview post={p} withDesc />
 					</li>
 				))
 			}
